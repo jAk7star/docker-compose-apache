@@ -71,12 +71,12 @@ docker-apache-portfolio/
    git commit -m "feat: implementacao do desafio docker compose com apache e portfolio web"
    ```
 
-2. Crie um novo repositório no seu perfil do GitHub (ex: `dio-docker-compose-apache`).
+2. Crie um novo repositório no seu perfil do GitHub (ex: `docker-compose-apache`).
 
 3. Vincule a branch principal e faça o push:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/SEU-USUARIO/dio-docker-compose-apache.git
+   git remote add origin https://github.com/jAk7star/docker-compose-apache.git
    git push -u origin main
    ```
 
