@@ -4,6 +4,19 @@ Este repositório contém a resolução do **Desafio de Projeto da DIO**, cujo o
 
 ---
 
+## 📸 Demonstração Visual
+
+### 1. Hero Section & Status do Container
+![Hero Section](docs/images/preview-hero.png)
+
+### 2. Habilidades & Projetos em Destaque
+![Skills e Projetos](docs/images/preview-skills-projects.png)
+
+### 3. Status da Infraestrutura & Métricas de Runtime
+![Status da Infraestrutura](docs/images/preview-infra.png)
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Docker & Docker Compose**: Criação e orquestração do container.
@@ -17,6 +30,8 @@ Este repositório contém a resolução do **Desafio de Projeto da DIO**, cujo o
 ```text
 docker-apache-portfolio/
 │
+├── docs/                  # Capturas de tela e assets de documentação
+│   └── images/
 ├── docker-compose.yml     # Definição do serviço Apache e volumes
 ├── public/                # Diretório raiz servido pelo Apache (/usr/local/apache2/htdocs/)
 │   ├── index.html         # Página principal do portfólio
