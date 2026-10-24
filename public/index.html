@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Portfolio | Docker & Apache Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-badge">🐳 Docker + Apache</span>
+    </div>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projetos</a>
+      <a href="#infra">Infraestrutura</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section id="about" class="hero-section">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span> Servido com sucesso via Container Apache HTTPD
+        </div>
+        <h1>Construindo Soluções Modernas com <span class="gradient-text">DevOps & Frontend</span></h1>
+        <p class="subtitle">
+          Portfólio técnico executado em um container Apache provisionado via <strong>Docker Compose</strong> para os Desafios de Projeto da DIO.
+        </p>
+        <div class="cta-group">
+          <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+          <a href="#infra" class="btn btn-secondary">Detalhes do Container</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Habilidades & Tecnologias</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🐳</div>
+          <h3>Docker & Compose</h3>
+          <p>Criação de imagens, orquestração de serviços, mapeamento de portas e volumes locais persistentes.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Apache HTTPD</h3>
+          <p>Configuração e entrega de assets estáticos com alta performance e confiabilidade.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>HTML5 & CSS3</h3>
+          <p>Layouts responsivos, glassmorphism, flexbox, grid e animações fluidas.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript Moderno</h3>
+          <p>Manipulação de DOM, requisições assíncronas e interatividade reativa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <span class="tag">Docker Compose</span>
+            <span class="tag">Apache</span>
+          </div>
+          <h3>Apache Web Server via Docker Compose</h3>
+          <p>Ambiente conteinerizado para servir páginas web estáticas desacopladas do sistema operacional hospedeiro com hot-reload por volume.</p>
+          <div class="project-footer">
+            <span class="project-badge">Desafio DIO #1</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">CI/CD</span>
+          </div>
+          <h3>Infraestrutura como Código</h3>
+          <p>Versionamento completo de arquivos de orquestração YML, automações de deploy e documentação técnica detalhada.</p>
+          <div class="project-footer">
+            <span class="project-badge">DevOps Bootcamp</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Container Info / Infra Section -->
+    <section id="infra" class="section infra-section">
+      <h2 class="section-title">Status da Infraestrutura</h2>
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">docker-compose ps & live runtime</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="cmd-prompt">$</span> docker compose up -d</p>
+          <p class="cmd-out">[+] Running 2/2</p>
+          <p class="cmd-out"> ✔ Network dio-apache-portfolio_default Created</p>
+          <p class="cmd-out"> ✔ Container dio-apache-portfolio       Started</p>
+          <div class="live-metrics">
+            <div class="metric">
+              <span class="metric-label">Servidor Web:</span>
+              <span class="metric-val" id="server-header">Apache HTTPD (Alpine)</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Porta Local:</span>
+              <span class="metric-val">8080:80</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Uptime do Navegador:</span>
+              <span class="metric-val" id="uptime-counter">0s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Desenvolvido para o Desafio de Projeto DIO | Containerizado com Docker Compose</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
